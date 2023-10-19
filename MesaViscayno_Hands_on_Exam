@@ -1,0 +1,16 @@
+base = eval(input("Enter a value you would like to convert:\n"
+                    "Type 1 for Base 10 to Base 2\n"
+                    "Type 2 for Base 10 to Base 8\n"
+                    "Type 3 for Base 10 to Base 16\n"))
+
+if base == 1:
+    Dec = int(input("Enter a decimal number:"))
+    print(format(Dec,"b"))
+elif base == 2:
+    Oct = int(input("Enter a decimal number:"))
+    print(format(Oct,"o"))
+elif base == 3:
+    Hex = int(input("Enter a decimal number:"))
+    print(format(Hex,"x"))
+else:
+    print("Invalid input, please try again.")
